@@ -1,13 +1,19 @@
 # Richard Obenze Portfolio
 
-A responsive, self-contained portfolio for Richard Obenze, focused on product, growth, QA, customer support, partnerships, and community work.
+A responsive Vite and Tailwind CSS portfolio focused on product, growth, QA, customer support, partnerships, and community work.
 
-## Preview locally
+## Development
 
 ```bash
-python3 -m http.server 4173 -d dist
+npm install
+npm run dev
 ```
 
-Then open `http://127.0.0.1:4173`.
+## Production build
 
-The site is intentionally buildless: all layout, styling, content, interactions, and the downloadable CV are bundled in `dist/index.html`.
+```bash
+npm run build
+npm run preview
+```
+
+Source files live in `index.html` and `src/`. Static assets live in `public/`, and Vite writes the production build to `dist/`.
